@@ -41,6 +41,9 @@ class TreeNode:
         if self.value == value:
             return self
         for child in self.children:
+          #  t = child.search(value)
+           # if t != None: 
+            #     return t //wszystko ponizej usunac 
             if child.value == value:
                 child.search(value)
                 return child
